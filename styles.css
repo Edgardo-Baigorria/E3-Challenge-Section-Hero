@@ -21,12 +21,21 @@ a:hover{
 }
 
 body{
+    height: 100vh;
     background: rgb(87,87,86);
+    background: -moz-linear-gradient(32deg, rgba(87,87,86,1) 0%, rgba(60,60,59,1) 100%);
+    background: -webkit-linear-gradient(32deg, rgba(87,87,86,1) 0%, rgba(60,60,59,1) 100%);
+    background: linear-gradient(32deg, rgba(87,87,86,1) 0%, rgba(60,60,59,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#575756",endColorstr="#3c3c3b",GradientType=1);
 }
 
 nav {
     height: 70px;
-    background-color: #868686;
+    background: rgb(134,134,134);
+    background: -moz-linear-gradient(32deg, rgba(134,134,134,1) 0%, rgba(87,87,86,1) 100%);
+    background: -webkit-linear-gradient(32deg, rgba(134,134,134,1) 0%, rgba(87,87,86,1) 100%);
+    background: linear-gradient(32deg, rgba(134,134,134,1) 0%, rgba(87,87,86,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#868686",endColorstr="#575756",GradientType=1); 
     color: #ffdd00;
     display: flex;
     justify-content: center;
