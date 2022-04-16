@@ -33,6 +33,7 @@ body {
     height: 60px;
     background: var(--gray);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.572);
+    overflow: hidden;
 }
 
 .contenedor {
