@@ -1,24 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-:root{
-    --links: #ffdd00;
+:root {
+    --yellow: #ffdd00;
+    --gray: ##585857;
 }
 
-html{
-    background: rgb(87,87,86);
-    background: -moz-linear-gradient(32deg, rgba(87,87,86,1) 0%, rgba(60,60,59,1) 100%);
-    background: -webkit-linear-gradient(32deg, rgba(87,87,86,1) 0%, rgba(60,60,59,1) 100%);
-    background: linear-gradient(32deg, rgba(87,87,86,1) 0%, rgba(60,60,59,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#575756",endColorstr="#3c3c3b",GradientType=1);
+html {
+    background: rgb(87, 87, 86);
+    background: -moz-linear-gradient(32deg, rgba(87, 87, 86, 1) 0%, rgba(60, 60, 59, 1) 100%);
+    background: -webkit-linear-gradient(32deg, rgba(87, 87, 86, 1) 0%, rgba(60, 60, 59, 1) 100%);
+    background: linear-gradient(32deg, rgba(87, 87, 86, 1) 0%, rgba(60, 60, 59, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#575756", endColorstr="#3c3c3b", GradientType=1);
 }
 
-body{
+body {
     font-family: "Asap";
     width: 100%;
     height: 100vh;
@@ -28,13 +29,13 @@ body{
     background-position: center;
 }
 
-.navbar{
+.navbar {
     height: 60px;
-    background: rgb(134,134,134);
+    background: var(--gray);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.572);
 }
 
-.contenedor{
+.contenedor {
     width: 65%;
     height: 100%;
     margin: 0 auto;
@@ -43,33 +44,34 @@ body{
     align-items: center;
 }
 
-.logo{
+.logo {
     width: 40px;
     height: 40px;
 }
 
-.items{
+.items {
     width: 60%;
     list-style: none;
     display: flex;
     justify-content: space-between;
 }
 
-.items a{
+.items a {
     padding: 10px;
     text-decoration: none;
-    color: var(--links);
+    color: var(--yellow);
+    font-weight: 500;
 }
 
-.items a:hover{
+.items a:hover {
     color: white;
 }
 
 @media (max-width:1000px) {
-    .contenedor{
+    .contenedor {
         width: 90%;
     }
-    
+
     .items {
         width: 90%;
         justify-content: flex-end;
@@ -77,11 +79,11 @@ body{
 }
 
 @media (max-width:600px) {
-    .logo{
+    .logo {
         display: none;
     }
 
-    .items{
+    .items {
         width: 100%;
         justify-content: space-between;
         font-size: .75rem;
